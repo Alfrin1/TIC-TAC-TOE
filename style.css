@@ -1,0 +1,58 @@
+body{
+    width:100vw;
+    height:100vh;
+    background-color: rgba(227, 64, 230, 0.457);
+    color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container
+{
+    background-color:whitesmoke;
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    
+}
+.box{
+    width:100px;
+    height:100px;
+    color:rgb(70, 0, 70);
+    font-size: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(241, 144, 160);
+    box-shadow: 0 0 0 2px rgb(241, 144, 160);;
+    cursor:pointer;
+}
+.status{
+    padding: 20px;
+    font-size:25px;
+    font-weight:500;
+}
+button{
+    width:150px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(185, 135, 231);
+    cursor: pointer;
+    border-radius: 15px;
+}
+.win
+{
+  animation: winner ease-in-out 1s infinite;
+}
+
+
+@keyframes winner {
+    0%{
+        background-color: rgba(255, 210, 170, 0.909);
+    }
+    100%{
+        background-color: rgb(243, 199, 142);
+    }
+    
+    
+}
